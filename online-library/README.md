@@ -1,16 +1,68 @@
-# React + Vite
+## Online Library System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Online Library System is a React application that allows users to browse books, search books, view book details, and add new books using Redux state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Home Page with book categories
+* Browse Books page
+* Search books by title or author
+* Filter books by category
+* Dynamic Book Details page
+* Add New Book functionality
+* Redux Toolkit state management
+* React Router navigation
+* Custom 404 Not Found page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+* React
+* React Router DOM
+* Redux Toolkit
+* React Redux
+* JavaScript
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start the development server
+
+```bash
+npm run dev
+```
+
+4. Open the application in the browser
+
+
+http://localhost:5173
+
+
+## Project Structure
+
+src/
+├── components/
+├── pages/
+├── redux/
+├── data/
+├── App.jsx
+├── main.jsx
+└── index.css
+
+## Author
+
+Ankita Chakraborty
+
