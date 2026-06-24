@@ -7,35 +7,40 @@ function Home() {
 
       <h2>Book Categories</h2>
 
-      <ul>
-        <li>
-          <Link to="/books/Fiction">Fiction</Link>
-        </li>
+      <div className="categories">
+        <Link to="/books/Fiction" className="category-card">
+          📖 Fiction
+        </Link>
 
-        <li>
-          <Link to="/books/Non-Fiction">Non-Fiction</Link>
-        </li>
+        <Link to="/books/Non-Fiction" className="category-card">
+          📘 Non-Fiction
+        </Link>
 
-        <li>
-          <Link to="/books/Sci-Fi">Sci-Fi</Link>
-        </li>
-      </ul>
+        <Link to="/books/Sci-Fi" className="category-card">
+          🚀 Sci-Fi
+        </Link>
+      </div>
 
       <h2>Popular Books</h2>
 
-      <div>
-        <h3>Harry Potter</h3>
-        <Link to="/book/1">View Details</Link>
-      </div>
+      <div className="books-container">
+        <div className="book-card">
+          <h3>Harry Potter</h3>
+          <p>Author: J.K. Rowling</p>
+          <Link to="/book/1">View Details</Link>
+        </div>
 
-      <div>
-        <h3>Atomic Habits</h3>
-        <Link to="/book/2">View Details</Link>
-      </div>
+        <div className="book-card">
+          <h3>Atomic Habits</h3>
+          <p>Author: James Clear</p>
+          <Link to="/book/2">View Details</Link>
+        </div>
 
-      <div>
-        <h3>Dune</h3>
-        <Link to="/book/3">View Details</Link>
+        <div className="book-card">
+          <h3>Dune</h3>
+          <p>Author: Frank Herbert</p>
+          <Link to="/book/3">View Details</Link>
+        </div>
       </div>
     </div>
   );
