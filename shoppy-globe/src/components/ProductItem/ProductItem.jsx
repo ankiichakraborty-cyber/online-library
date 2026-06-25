@@ -1,7 +1,10 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 function ProductItem({ product }) {
+    const dispatch = useDispatch();
   return (
     <div className="product-card">
       <img
@@ -21,7 +24,19 @@ function ProductItem({ product }) {
           <button>View Details</button>
         </Link>
 
-        <button>Add to Cart</button>
+        <button
+  onClick={() => {
+    try {
+      dispatch(addToCart(product));
+      alert("Added Successfully");
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    }
+  }}
+>
+  Add to Cart
+</button>
       </div>
     </div>
   );
