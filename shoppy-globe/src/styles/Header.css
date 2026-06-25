@@ -4,7 +4,9 @@
   align-items: center;
   background: #2563eb;
   color: white;
-  padding: 15px 40px;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .logo {
@@ -25,4 +27,27 @@ nav a {
 
 nav a:hover {
   color: yellow;
+}
+
+.header input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  width: 220px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header input {
+    width: 100%;
+    max-width: 300px;
+  }
 }
