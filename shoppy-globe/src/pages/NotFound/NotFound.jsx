@@ -1,9 +1,28 @@
+import { Link, useRouteError } from "react-router-dom";
+
 function NotFound() {
+  const error = useRouteError();
+
   return (
-    <div>
-      <h1>404</h1>
-      <h2>Page Not Found</h2>
-      <p>The page you are looking for doesn't exist.</p>
+    <div
+      style={{
+        textAlign: "center",
+        padding: "50px",
+      }}
+    >
+      <h1>404 - Page Not Found</h1>
+
+      <p>
+        Sorry! The page you are looking for does not exist.
+      </p>
+
+      <h3>Error Details</h3>
+
+      <p>{error?.statusText || error?.message}</p>
+
+      <Link to="/">
+        <button>Go to Home</button>
+      </Link>
     </div>
   );
 }
