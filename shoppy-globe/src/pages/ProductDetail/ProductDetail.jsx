@@ -41,30 +41,31 @@ function ProductDetail() {
   }
 
   return (
-    <div className="product-detail">
-      <img
-        src={product.thumbnail}
-        alt={product.title}
-        width="300"
-      />
+  <div className="product-detail">
+    <img
+      src={product.thumbnail}
+      alt={product.title}
+    />
 
+    <div className="product-info">
       <h2>{product.title}</h2>
 
       <p>
         <strong>Category:</strong> {product.category}
       </p>
 
-      <p>
-        <strong>Price:</strong> ${product.price}
+      <p className="price">
+        ${product.price}
       </p>
 
       <p>
-        <strong>Rating:</strong> ⭐ {product.rating}
+        ⭐ {product.rating}
       </p>
 
       <p>{product.description}</p>
     </div>
-  );
+  </div>
+);
 }
 
 export default ProductDetail;

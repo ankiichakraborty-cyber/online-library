@@ -1,19 +1,36 @@
 .product-detail {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
-  text-align: center;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .product-detail img {
   width: 300px;
-  margin-bottom: 20px;
+  height: 300px;
+  object-fit: contain;
 }
 
-.product-detail h2 {
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
   margin-bottom: 15px;
 }
 
-.product-detail p {
+.product-info p {
   margin: 10px 0;
+  line-height: 1.6;
+}
+
+.price {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
 }
