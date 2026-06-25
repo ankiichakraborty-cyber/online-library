@@ -11,6 +11,7 @@ function ProductItem({ product }) {
         src={product.thumbnail}
         alt={product.title}
         className="product-image"
+        loading="lazy"
       />
 
       <h3>{product.title}</h3>

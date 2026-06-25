@@ -45,6 +45,7 @@ function ProductDetail() {
     <img
       src={product.thumbnail}
       alt={product.title}
+      loading="lazy"
     />
 
     <div className="product-info">

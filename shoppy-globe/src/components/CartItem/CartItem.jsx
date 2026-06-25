@@ -24,6 +24,7 @@ function CartItem({ item }) {
       <img
         src={item.thumbnail}
         alt={item.title}
+        loading="lazy"
         width="100"
       />
 
